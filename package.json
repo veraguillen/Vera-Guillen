@@ -1,16 +1,16 @@
 ﻿{
-  "name": "portfolio_vera_guillen",
-  "version": "1.0.0",
-  "description": "Portfolio profesional de Vera Guillen - Data Scientist & ML Engineer",
-  "scripts": {
-    "dev": "echo 'No se necesita servidor de desarrollo para un sitio estatico'"
-  },
-  "keywords": [
-    "portfolio",
-    "data science",
-    "machine learning",
-    "vercel"
-  ],
-  "author": "Vera Guillen",
-  "license": "MIT"
+    "version":  "1.0.0",
+    "name":  "portfolioveraguillen",
+    "description":  "Portfolio profesional de Vera Guillen - Data Scientist \u0026 ML Engineer",
+    "scripts":  {
+                    "dev":  "echo \u0027No se necesita servidor de desarrollo para un sitio estatico\u0027"
+                },
+    "author":  "Vera Guillen",
+    "keywords":  [
+                     "portfolio",
+                     "data science",
+                     "machine learning",
+                     "vercel"
+                 ],
+    "license":  "MIT"
 }
