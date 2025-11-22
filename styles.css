@@ -1248,15 +1248,16 @@ img {
 }
 
 .project-image-wrapper {
-    width: calc(100% + clamp(3rem, 4vw, 4rem));
-    height: clamp(12.5rem, 10rem + 15vw, 18.75rem);
-    overflow: hidden;
+    width: 100%;
+    height: 200px;
     background: var(--bg-main);
     position: relative;
-    margin: calc(-1 * clamp(1.5rem, 2vw, 2rem)) calc(-1 * clamp(1.5rem, 2vw, 2rem)) clamp(1.5rem, 2vw, 2rem);
+    margin: 0;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .project-image-wrapper img {
@@ -1265,17 +1266,8 @@ img {
     width: auto;
     height: auto;
     object-fit: contain;
-    transition: transform 0.3s ease;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1rem;
-    background: var(--bg-main);
-}
-
-.project-card:hover .project-image-wrapper img {
-    transform: scale(1.05);
+    display: block;
+    margin: 0 auto;
 }
 
 .project-card-content {
