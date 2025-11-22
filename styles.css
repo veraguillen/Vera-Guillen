@@ -1754,3 +1754,61 @@ img {
     font-size: clamp(1rem, 0.9rem + 1vw, 1.25rem);
 }
 
+/* ============================================
+   MEDIA QUERIES PARA RESPONSIVIDAD
+   ============================================ */
+
+/* Tablets y dispositivos más pequeños (hasta 992px) */
+@media (max-width: 62rem) {
+    .skills-container-enhanced {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* Tablets y móviles (hasta 768px) */
+@media (max-width: 48rem) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-image-section {
+        order: -1; /* Mueve la imagen arriba en móvil */
+        margin-bottom: 2rem;
+    }
+
+    .skills-container-enhanced,
+    .projects-grid,
+    .soft-skills-container-enhanced {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 30rem) {
+    .main-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+}
