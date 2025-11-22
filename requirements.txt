@@ -1,0 +1,15 @@
+# Streamlit Core
+streamlit>=1.32.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Image Processing (for profile picture and project images)
+Pillow>=10.0.0
+
+# Data Processing (if needed for future features)
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization (if needed for future features)
+plotly>=5.18.0

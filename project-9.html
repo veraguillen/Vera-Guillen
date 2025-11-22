@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Dashboard de Análisis en Tiempo Real para el monitoreo de sistemas de IA">
+    <title>Dashboard de Métricas | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index.html#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="index.html#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-chart-bar"></i> Dashboard de Análisis en Tiempo Real
+            </h1>
+            <p class="project-subtitle">Monitoreo y visualización de métricas de rendimiento para sistemas de IA</p>
+            <p style="font-family: var(--font-mono); color: var(--text-secondary); margin-top: 1rem; font-size: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);">
+                <strong>Desarrollador:</strong> Vera Guillén |
+                <strong>Stack Principal:</strong> Streamlit, Plotly, Pandas, Python
+            </p>
+        </div>
+
+        <div class="hero-image-container">
+            <img src="./assets/proyectos/metricas1.png" alt="Dashboard de Métricas" onerror="this.src='./assets/proyectos/metricas2.png';">
+        </div>
+
+        <div class="content-card">
+            <p style="font-family: var(--font-mono); color: var(--text-primary); font-size: clamp(1rem, 0.9rem + 1vw, 1.1rem); line-height: 1.8;">
+                Este proyecto consiste en un dashboard interactivo para el <strong>monitoreo en tiempo real</strong> del rendimiento de sistemas de inteligencia artificial, como el Chatbot RAG Multimarca. Permite visualizar métricas clave, analizar el comportamiento de los usuarios y obtener insights para la optimización continua.
+            </p>
+            <h3 style="color: var(--text-primary); font-family: var(--font-mono); margin-top: 2rem;">Características Principales</h3>
+            <ul>
+                <li><strong>Monitoreo en Tiempo Real:</strong> Visualización de la performance del chatbot y la interacción de los usuarios.</li>
+                <li><strong>Análisis de Métricas:</strong> KPIs sobre la satisfacción del usuario, tasa de resolución y efectividad del RAG.</li>
+                <li><strong>Visualización Interactiva:</strong> Gráficos creados con Plotly para una exploración de datos dinámica.</li>
+                <li><strong>Filtrado Avanzado:</strong> Capacidad para segmentar datos por marca, período de tiempo y otras dimensiones.</li>
+            </ul>
+        </div>
+
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-images"></i>
+            <span>Galería del Dashboard</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/metricas1.png" alt="Métricas de rendimiento del chatbot" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/metricas2.png" alt="Análisis de interacciones por marca" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/metricas3.png" alt="Estadísticas de uso y satisfacción" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/Metricas-RAG-Chat-Multimarca" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Dashboard Métricas - GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Volver a Proyectos</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

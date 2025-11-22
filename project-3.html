@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Plataforma Inmobiliaria Inteligente - Solución integral para análisis de inversiones inmobiliarias con datos en tiempo real">
+    <title>Plataforma Inmobiliaria Inteligente | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Menú Desktop -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index.html#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="index.html#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- HEADER DEL PROYECTO -->
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-home"></i> Plataforma de Análisis Inmobiliario
+            </h1>
+            <p class="project-subtitle">Solución integral para análisis de inversiones inmobiliarias con datos en tiempo real</p>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-container">
+            <img src="./assets/proyectos/real_estate_platform.jpg" alt="Plataforma de análisis inmobiliario" onerror="this.src='./assets/proyectos/real_estate_platform.jpg';">
+        </div>
+
+        <!-- DESCRIPCIÓN DEL PROYECTO -->
+        <div class="content-card">
+            <h2 class="section-title-enhanced">
+                <i class="fas fa-info-circle"></i>
+                <span>Descripción del Proyecto</span>
+            </h2>
+            <p>Plataforma full-stack que consolida datos de múltiples fuentes (Zillow, OpenStreetMap, OpenWeatherMap, y bases de datos públicas) para proporcionar un análisis completo de propiedades inmobiliarias. La solución incluye visualización geoespacial interactiva, análisis comparativo de mercado y herramientas para la evaluación de inversiones.</p>
+        </div>
+
+        <!-- MÉTRICAS CLAVE -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-bar"></i>
+            <span>Métricas Clave</span>
+        </h2>
+
+        <div class="metrics-grid">
+            <div class="metric-box">
+                <h3>🔗 Fuentes de Datos</h3>
+                <h2>5+</h2>
+            </div>
+            <div class="metric-box">
+                <h3>⚡ Tiempo de Respuesta</h3>
+                <h2>&lt;2s</h2>
+            </div>
+            <div class="metric-box">
+                <h3>🎯 Precisión</h3>
+                <h2>98%</h2>
+            </div>
+            <div class="metric-box">
+                <h3>🟢 Disponibilidad</h3>
+                <h2>99.9%</h2>
+            </div>
+        </div>
+
+        <!-- CARACTERÍSTICAS PRINCIPALES -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-star"></i>
+            <span>Características Clave</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>🌐 Integración de Datos</h3>
+                <h4>🔄 Fuentes Múltiples</h4>
+                <ul>
+                    <li>🌍 Datos geoespaciales (OpenStreetMap)</li>
+                    <li>🏘️ Listados de propiedades (Zillow API)</li>
+                    <li>🌤️ Clima local (OpenWeatherMap)</li>
+                    <li>📊 Datos demográficos (APIs públicas)</li>
+                </ul>
+                <h4 style="margin-top: 1.5rem;">🛠️ Procesamiento</h4>
+                <ul>
+                    <li>🔄 Sincronización en tiempo real</li>
+                    <li>🧹 Limpieza automática de datos</li>
+                    <li>🔗 Normalización de formatos</li>
+                    <li>📈 Enriquecimiento de información</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>🗺️ Visualización Interactiva</h3>
+                <h4>🎯 Mapa Interactivo</h4>
+                <ul>
+                    <li>🖱️ Navegación fluida</li>
+                    <li>🔍 Búsqueda por ubicación</li>
+                    <li>📍 Marcadores agrupados</li>
+                    <li>🎨 Capas personalizables</li>
+                </ul>
+                <h4 style="margin-top: 1.5rem;">📊 Análisis</h4>
+                <ul>
+                    <li>📈 Tendencias de precios</li>
+                    <li>📊 Comparativas de mercado</li>
+                    <li>💰 Estimación de ROI</li>
+                    <li>📱 Diseño responsive</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TECNOLOGÍAS UTILIZADAS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-tools"></i>
+            <span>Tecnologías Utilizadas</span>
+        </h2>
+
+        <div class="tech-grid">
+            <div class="content-card">
+                <h4>🖥️ Frontend</h4>
+                <ul>
+                    <li>React.js</li>
+                    <li>Leaflet.js</li>
+                    <li>Material-UI</li>
+                    <li>Axios</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>🏗️ Backend</h4>
+                <ul>
+                    <li>Python 3.9+</li>
+                    <li>Flask</li>
+                    <li>SQLAlchemy</li>
+                    <li>PostgreSQL</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>☁️ Infraestructura</h4>
+                <ul>
+                    <li>Docker</li>
+                    <li>AWS EC2</li>
+                    <li>Nginx</li>
+                    <li>GitHub Actions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RESULTADOS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-trophy"></i>
+            <span>Resultados Alcanzados</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>📈 Métricas Clave</h3>
+                <ul>
+                    <li>⏱️ <strong>80%</strong> reducción en tiempo de investigación</li>
+                    <li>💰 <strong>65%</strong> más eficiencia en análisis</li>
+                    <li>📊 <strong>95%</strong> precisión en valoraciones</li>
+                    <li>🚀 <strong>3x</strong> más rápido que soluciones similares</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>🎯 Impacto</h3>
+                <ul>
+                    <li>🏆 Ganador del Hackathon Inmobiliario 2023</li>
+                    <li>📱 +500 usuarios activos mensuales</li>
+                    <li>⭐ 4.9/5 en satisfacción</li>
+                    <li>🔄 Actualizaciones semanales</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GALERÍA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-images"></i>
+            <span>Galería</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/real1.jpg" alt="Mapa interactivo de propiedades" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/real2.jpg" alt="Detalles de propiedad y valoración" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/real4.png" alt="Dashboard de métricas y estadísticas" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/Real-State-IA" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Ver en GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Volver al Inicio</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+

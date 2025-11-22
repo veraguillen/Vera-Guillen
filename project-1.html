@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Modelado de Movilidad Sostenible - Análisis de viabilidad para la transición a flotas de vehículos ecológicos en Nueva York">
+    <title>Modelado de Movilidad Sostenible | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Menú Desktop -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index.html#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="index.html#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- HEADER DEL PROYECTO -->
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-leaf"></i> Modelado de Movilidad Sostenible
+            </h1>
+            <p class="project-subtitle">Análisis de viabilidad para la transición a flotas de vehículos ecológicos en Nueva York</p>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-container">
+            <img src="./assets/proyectos/movilidad_sostenible.jpg" alt="Análisis de movilidad sostenible para flotas urbanas" onerror="this.src='./assets/proyectos/taxi1.jpg';">
+        </div>
+
+        <!-- VISIÓN GENERAL -->
+        <div class="content-card">
+            <h2 class="section-title-enhanced">
+                <i class="fas fa-info-circle"></i>
+                <span>Visión General</span>
+            </h2>
+            <p>Este proyecto evalúa la viabilidad de reemplazar la flota de taxis tradicionales de la ciudad de Nueva York por vehículos eléctricos e híbridos, analizando el impacto económico, ambiental y operativo de esta transición.</p>
+        </div>
+
+        <!-- MÉTRICAS CLAVE -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-bar"></i>
+            <span>Métricas Clave</span>
+        </h2>
+
+        <div class="metrics-grid">
+            <div class="metric-box">
+                <h3>🌱 Reducción de Emisiones</h3>
+                <h2>45%</h2>
+                <p>anual</p>
+            </div>
+            <div class="metric-box">
+                <h3>💰 Ahorro en Combustible</h3>
+                <h2>$3.2M</h2>
+                <p>por año</p>
+            </div>
+            <div class="metric-box">
+                <h3>🚕 Vehículos Analizados</h3>
+                <h2>13,500+</h2>
+                <p>taxis</p>
+            </div>
+            <div class="metric-box">
+                <h3>⏱️ Período de Retorno</h3>
+                <h2>3.5 años</h2>
+                <p>de inversión</p>
+            </div>
+        </div>
+
+        <!-- METODOLOGÍA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-brain"></i>
+            <span>Metodología</span>
+        </h2>
+
+        <div class="methodology-tabs">
+            <div class="method-tab active" data-tab="1">
+                <h3>1. Recopilación de Datos</h3>
+                <ul>
+                    <li>Datos de viajes de taxis de NYC (NYC TLC)</li>
+                    <li>Especificaciones técnicas de vehículos</li>
+                    <li>Costos de energía y mantenimiento</li>
+                    <li>Infraestructura de carga disponible</li>
+                </ul>
+            </div>
+            <div class="method-tab" data-tab="2">
+                <h3>2. Modelado</h3>
+                <ul>
+                    <li>Modelo de consumo energético</li>
+                    <li>Proyección de costos a 10 años</li>
+                    <li>Huella de carbono por vehículo</li>
+                    <li>Análisis de rutas y rangos</li>
+                </ul>
+            </div>
+            <div class="method-tab" data-tab="3">
+                <h3>3. Simulación</h3>
+                <ul>
+                    <li>Simulación de patrones de uso</li>
+                    <li>Estrategias de carga óptimas</li>
+                    <li>Escenarios de adopción gradual</li>
+                    <li>Análisis de sensibilidad</li>
+                </ul>
+            </div>
+            <div class="method-tab" data-tab="4">
+                <h3>4. Análisis</h3>
+                <ul>
+                    <li>Retorno de inversión (ROI)</li>
+                    <li>Impacto ambiental</li>
+                    <li>Viabilidad operativa</li>
+                    <li>Recomendaciones estratégicas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- HALLAZGOS PRINCIPALES -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-search"></i>
+            <span>Hallazgos Principales</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>Beneficios Ambientales</h3>
+                <ul>
+                    <li>Reducción de 78,000 toneladas de CO₂ anuales</li>
+                    <li>Disminución del 92% en emisiones de NOx</li>
+                    <li>Menor contaminación acústica</li>
+                    <li>Contribución a objetivos de sostenibilidad</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>Beneficios Económicos</h3>
+                <ul>
+                    <li>Ahorro de $8,500 por vehículo/año</li>
+                    <li>Incentivos fiscales disponibles</li>
+                    <li>Menor costo de mantenimiento</li>
+                    <li>Mayor vida útil de los vehículos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- STACK TECNOLÓGICO -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-tools"></i>
+            <span>Stack Tecnológico</span>
+        </h2>
+
+        <div class="tech-grid">
+            <div class="content-card">
+                <h4>Análisis de Datos</h4>
+                <ul>
+                    <li>Python (Pandas, NumPy)</li>
+                    <li>GeoPandas</li>
+                    <li>Scikit-learn</li>
+                    <li>Jupyter Notebooks</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>Visualización</h4>
+                <ul>
+                    <li>Matplotlib/Seaborn</li>
+                    <li>Plotly</li>
+                    <li>Folium</li>
+                    <li>Power BI</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>Modelado</h4>
+                <ul>
+                    <li>SimPy para simulaciones</li>
+                    <li>Optimización con PuLP</li>
+                    <li>Análisis de series temporales</li>
+                    <li>Modelos predictivos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- VISUALIZACIONES -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-line"></i>
+            <span>Visualizaciones</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/taxi1.jpg" alt="Análisis de flota de taxis en NYC" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/taxi2.jpg" alt="Proyección de reducción de emisiones" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/taxi3.jpg" alt="Comparación de costos y emisiones" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/taxi4.jpg" alt="Análisis de viabilidad económica" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/taxi5.jpg" alt="Mapa de estaciones de carga y rutas" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/taxi6.jpg" alt="Dashboard de métricas y KPIs" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <!-- RECOMENDACIONES ESTRATÉGICAS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-lightbulb"></i>
+            <span>Recomendaciones Estratégicas</span>
+        </h2>
+
+        <div class="recommendations-grid">
+            <div class="content-card">
+                <h3>Corto Plazo (1-2 años)</h3>
+                <ul>
+                    <li>Implementar programa piloto con 500 vehículos</li>
+                    <li>Instalar estaciones de carga estratégicas</li>
+                    <li>Capacitar a conductores y mecánicos</li>
+                    <li>Monitorear desempeño y ajustar modelo</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>Largo Plazo (3-5 años)</h3>
+                <ul>
+                    <li>Transición completa al 100% de vehículos limpios</li>
+                    <li>Integrar con energías renovables</li>
+                    <li>Sistema de gestión de flota inteligente</li>
+                    <li>Expansión a otras ciudades</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/New_York_Taxis_IA" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Ver en GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Volver al Inicio</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+

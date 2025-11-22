@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Agente Data Search Platform - Automatización de la recolección y procesamiento de datos para análisis avanzado">
+    <title>Agente Data Search Platform | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Menú Desktop -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index.html#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="index.html#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- HEADER DEL PROYECTO -->
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-database"></i> Data Acquisition & Processing Pipeline
+            </h1>
+            <p class="project-subtitle">Automatización de la recolección y procesamiento de datos para análisis avanzado</p>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-container">
+            <img src="./assets/proyectos/data_acquisition_hero.jpg" alt="Arquitectura del Sistema de Adquisición de Datos" onerror="this.src='./assets/proyectos/data_acquisition_hero.jpg';">
+        </div>
+
+        <!-- MÉTRICAS CLAVE -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-bar"></i>
+            <span>Métricas Clave</span>
+        </h2>
+
+        <div class="metrics-grid">
+            <div class="metric-box">
+                <h3>🔗 Fuentes de Datos</h3>
+                <h2>100+</h2>
+            </div>
+            <div class="metric-box">
+                <h3>⚡ Reducción de Tiempo</h3>
+                <h2>80%</h2>
+            </div>
+            <div class="metric-box">
+                <h3>🎯 Tasa de Éxito</h3>
+                <h2>95%</h2>
+            </div>
+            <div class="metric-box">
+                <h3>💰 Ahorro de Costos</h3>
+                <h2>60%</h2>
+            </div>
+        </div>
+
+        <!-- DESCRIPCIÓN DEL PROYECTO -->
+        <div class="content-card">
+            <h2 class="section-title-enhanced">
+                <i class="fas fa-info-circle"></i>
+                <span>Descripción del Proyecto</span>
+            </h2>
+            <p>Solución integral para la adquisición, limpieza y transformación de datos de múltiples fuentes. El sistema automatiza la recolección de datos, garantizando su calidad y disponibilidad para análisis posteriores.</p>
+        </div>
+
+        <!-- CARACTERÍSTICAS PRINCIPALES -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-star"></i>
+            <span>Características Clave</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>🌐 Extracción de Datos</h3>
+                <h4>🔄 Múltiples Fuentes</h4>
+                <ul>
+                    <li>🌍 Web Scraping Avanzado</li>
+                    <li>🔌 Integración con APIs</li>
+                    <li>📂 Procesamiento de Archivos</li>
+                    <li>🔍 Búsqueda Automatizada</li>
+                </ul>
+                <h4 style="margin-top: 1.5rem;">🛠️ Procesamiento</h4>
+                <ul>
+                    <li>🧹 Limpieza Automática</li>
+                    <li>🔗 Normalización de Datos</li>
+                    <li>📊 Transformación</li>
+                    <li>📦 Almacenamiento Eficiente</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TECNOLOGÍAS UTILIZADAS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-tools"></i>
+            <span>Tecnologías Utilizadas</span>
+        </h2>
+
+        <div class="tech-grid">
+            <div class="content-card">
+                <h4>🐍 Backend</h4>
+                <ul>
+                    <li>Python 3.9+</li>
+                    <li>BeautifulSoup</li>
+                    <li>Requests</li>
+                    <li>Tenacity</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>☁️ Infraestructura</h4>
+                <ul>
+                    <li>Azure Functions</li>
+                    <li>Redis Cache</li>
+                    <li>Azure Blob Storage</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>🔍 APIs y Herramientas</h4>
+                <ul>
+                    <li>Google Custom Search</li>
+                    <li>Selenium</li>
+                    <li>Pandas</li>
+                    <li>NLTK</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ARQUITECTURA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-sitemap"></i>
+            <span>Arquitectura del Sistema</span>
+        </h2>
+
+        <div class="content-card">
+            <h3>🔄 Flujo de Datos</h3>
+            <ol style="color: var(--text-secondary); line-height: 2; padding-left: 2rem;">
+                <li><strong>Extracción:</strong> Obtención de datos de múltiples fuentes</li>
+                <li><strong>Procesamiento:</strong> Limpieza y normalización</li>
+                <li><strong>Almacenamiento:</strong> Guardado estructurado</li>
+                <li><strong>Análisis:</strong> Procesamiento para obtener insights</li>
+            </ol>
+        </div>
+
+        <!-- RESULTADOS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-trophy"></i>
+            <span>Resultados Alcanzados</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>🎯 Impacto</h3>
+                <ul>
+                    <li>⏱️ <strong>80%</strong> reducción en tiempo de procesamiento</li>
+                    <li>💰 <strong>60%</strong> ahorro en costos de API</li>
+                    <li>📊 <strong>95%</strong> de precisión en extracción</li>
+                    <li>🚀 <strong>100+</strong> fuentes integradas</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>🏆 Logros</h3>
+                <ul>
+                    <li>🏅 Sistema escalable y mantenible</li>
+                    <li>📈 Mayor calidad de datos</li>
+                    <li>🔄 Procesamiento en tiempo real</li>
+                    <li>🌐 Compatibilidad multiplataforma</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GALERÍA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-images"></i>
+            <span>Galería</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/search1.jpg" alt="Sistema de búsqueda y extracción de datos" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/search2.jpg" alt="Arquitectura del pipeline de adquisición" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/AGENTE-Busqueda-APIS" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Ver en GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Volver al Inicio</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+

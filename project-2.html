@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Chatbot RAG Multimarca - Plataforma empresarial de asistencia conversacional con IA">
+    <title>Chatbot RAG Multimarca | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Menú Desktop -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index.html#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="index.html#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- HEADER DEL PROYECTO -->
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-robot"></i> Chatbot RAG Multimarca
+            </h1>
+            <p class="project-subtitle">Plataforma empresarial de asistencia conversacional con IA</p>
+            <p style="font-family: var(--font-mono); color: var(--text-secondary); margin-top: 1rem; font-size: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);">
+                <strong>Desarrollador:</strong> Vera Guillén | 
+                <strong>Versión:</strong> 1.0.1 | 
+                <strong>Stack Principal:</strong> Python, FastAPI, PostgreSQL, Docker, Azure, RAG
+            </p>
+        </div>
+
+
+        <!-- VIDEO DEMO -->
+        <div class="content-card" style="margin-top: 2rem;">
+            <h2 class="section-title-enhanced" style="margin-bottom: 1.5rem;">
+                <i class="fas fa-video"></i>
+                <span>Demo en Video</span>
+            </h2>
+            <div style="position: relative; width: 100%; max-width: 100%; margin: 0 auto; border-radius: clamp(0.75rem, 0.6rem + 1vw, 1rem); overflow: hidden; background: var(--bg-main); border: 0.0625rem solid rgba(255, 106, 0, 0.2);">
+                <video controls style="width: 100%; height: auto; display: block;" poster="./assets/proyectos/chatbot_rag.jpg">
+                    <source src="./assets/proyectos/bot.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+
+        <!-- EXECUTIVE SUMMARY -->
+        <div class="content-card">
+            <p style="font-family: var(--font-mono); color: var(--text-primary); font-size: clamp(1rem, 0.9rem + 1vw, 1.1rem); line-height: 1.8;">
+                <strong style="color: var(--accent-orange-glow);">Chatbot Multimarca</strong> es una plataforma empresarial de chatbot inteligente que integra múltiples tecnologías de vanguardia para ofrecer asistencia conversacional automatizada a través de WhatsApp. El sistema utiliza Retrieval-Augmented Generation (RAG) con búsqueda vectorial para proporcionar respuestas contextuales precisas basadas en documentación empresarial.
+            </p>
+            <h3 style="color: var(--text-primary); font-family: var(--font-mono); margin-top: 2rem;">Características Destacadas</h3>
+            <ul>
+                <li><strong>Arquitectura Asíncrona Completa</strong> con FastAPI y SQLAlchemy async</li>
+                <li><strong>Sistema RAG Avanzado</strong> con PGVector para búsqueda semántica</li>
+                <li><strong>Integración Multi-Plataforma</strong> (WhatsApp Business API, interfaz web Chainlit)</li>
+                <li><strong>Máquina de Estados Conversacional</strong> para flujos complejos</li>
+                <li><strong>Despliegue Containerizado</strong> con Docker y Azure App Service</li>
+                <li><strong>Observabilidad y Resiliencia</strong> con circuit breakers, caché Redis y logging estructurado</li>
+            </ul>
+        </div>
+
+        <!-- ARQUITECTURA DEL SISTEMA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-sitemap"></i>
+            <span>Arquitectura del Sistema</span>
+        </h2>
+
+        <div class="tech-grid">
+            <div class="content-card">
+                <h4>Backend Core</h4>
+                <ul>
+                    <li>FastAPI 0.115.12</li>
+                    <li>Python 3.10</li>
+                    <li>Uvicorn/Gunicorn</li>
+                    <li>Pydantic 2.11.7</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>Inteligencia Artificial</h4>
+                <ul>
+                    <li>Langchain Core 0.3.65</li>
+                    <li>Langchain-Postgres 0.0.14</li>
+                    <li>Sentence-Transformers 4.1.0</li>
+                    <li>PyTorch 2.7.1</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>Base de Datos y Persistencia</h4>
+                <ul>
+                    <li>PostgreSQL 15</li>
+                    <li>PGVector 0.3.6</li>
+                    <li>SQLAlchemy 2.0.41 (Async)</li>
+                    <li>Redis 7</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>DevOps e Infraestructura</h4>
+                <ul>
+                    <li>Docker (Multi-Stage)</li>
+                    <li>Azure App Service</li>
+                    <li>Azure PostgreSQL</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- COMPONENTES TÉCNICOS CLAVE -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-cogs"></i>
+            <span>Componentes Técnicos Clave</span>
+        </h2>
+
+        <div class="methodology-tabs">
+            <div class="method-tab">
+                <h3>1. Sistema RAG (Retrieval-Augmented Generation)</h3>
+                <p><strong>Archivo:</strong> <code>app/ai/rag_retriever.py</code></p>
+                <ul>
+                    <li>Embeddings multilingües</li>
+                    <li>Búsqueda vectorial con filtrado por marca</li>
+                    <li>Deduplicación inteligente</li>
+                    <li>Scoring de relevancia</li>
+                    <li>Chunk Size: 1200, Overlap: 150</li>
+                    <li>Similarity Threshold: 0.3, K Final: 4</li>
+                </ul>
+            </div>
+            <div class="method-tab">
+                <h3>2. Máquina de Estados Conversacional</h3>
+                <p><strong>Archivo:</strong> <code>app/main/webhook_handler.py</code></p>
+                <p>Maneja flujos complejos como:</p>
+                <ul>
+                    <li>Selección de marca</li>
+                    <li>Chat principal</li>
+                    <li>Recolección de datos</li>
+                    <li>Agendamiento</li>
+                </ul>
+            </div>
+            <div class="method-tab">
+                <h3>3. Cliente LLM con Factory Pattern</h3>
+                <p><strong>Archivo:</strong> <code>app/api/llm_client.py</code></p>
+                <ul>
+                    <li>Circuit Breaker</li>
+                    <li>Caché Redis</li>
+                    <li>Request ID Tracking</li>
+                    <li>Reintentos automáticos con backoff</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GALERÍA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-images"></i>
+            <span>Galería del Proyecto</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/multimarca1.png" alt="Interfaz principal del chatbot" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/multimarca2.png" alt="Sistema de selección de marca" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/multimarca3.png" alt="Chat conversacional con RAG" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/multimarca4.jpg" alt="Arquitectura del sistema" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/bot1.png" alt="Vista del chatbot en acción" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/bot2.png" alt="Interfaz de usuario avanzada" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <!-- DEPLOYMENT & SECURITY -->
+        <h2 class="section-title-enhanced">
+            <i class="fab fa-docker"></i>
+            <span>Containerización, Despliegue y Seguridad</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>Dockerfile Multi-Stage</h3>
+                <p>Dockerfile optimizado con una etapa de 'builder' para compilar dependencias y una etapa de 'runtime' ligera con un usuario no-root para mayor seguridad.</p>
+                <h4 style="margin-top: 1rem;">Script de Inicio (startup.sh)</h4>
+                <p>Asegura la disponibilidad de la BD y Redis, ejecuta migraciones Alembic e inicia Gunicorn con workers configurables.</p>
+            </div>
+            <div class="content-card">
+                <h3>Medidas de Seguridad</h3>
+                <ul>
+                    <li><strong>Gestión de Secretos:</strong> Variables de entorno, sin hardcoding</li>
+                    <li><strong>SSL/TLS:</strong> Conexiones forzadas en producción</li>
+                    <li><strong>Validación:</strong> Pydantic para toda la entrada de datos</li>
+                    <li><strong>Compliance:</strong> Endpoints para Política de Privacidad, Términos de Servicio y Eliminación de Datos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PATRONES DE DISEÑO -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-lightbulb"></i>
+            <span>Patrones de Diseño y Habilidades Demostradas</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>Patrones Implementados</h3>
+                <ul>
+                    <li>Factory Pattern</li>
+                    <li>Singleton Pattern</li>
+                    <li>State Machine Pattern</li>
+                    <li>Repository Pattern</li>
+                    <li>Circuit Breaker Pattern</li>
+                    <li>Middleware Pattern</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>Habilidades Clave</h3>
+                <ul>
+                    <li>Desarrollo Backend Avanzado (Async)</li>
+                    <li>Arquitectura de Sistemas de IA (RAG)</li>
+                    <li>DevOps (Docker, Azure)</li>
+                    <li>Diseño de BD (PostgreSQL + PGVector)</li>
+                    <li>Observabilidad y Resiliencia</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RESULTADOS E IMPACTO -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-bar"></i>
+            <span>Resultados e Impacto</span>
+        </h2>
+
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Automatización de Consultas</h4>
+            <p>70-80% de las consultas se resuelven automáticamente sin intervención humana.</p>
+        </div>
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Reducción Tiempo de Respuesta</h4>
+            <p>De horas a menos de 5 segundos en promedio.</p>
+        </div>
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Manejo de Concurrencia</h4>
+            <p>100+ solicitudes concurrentes con latencia p95 menor a 500ms.</p>
+        </div>
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Disponibilidad</h4>
+            <p>99%+ en Azure, monitoreada con Application Insights.</p>
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/Bot-Multimarcas-RAG" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Chatbot RAG - GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="https://github.com/veraguillen/Metricas-RAG-Chat-Multimarca" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Dashboard Métricas - GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Volver al Inicio</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+

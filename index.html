@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Portfolio de Vera Guillen - Data Scientist & ML Engineer especializada en IA, Machine Learning y análisis de datos">
+    <title>Vera Guillen | Data Scientist & ML Engineer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Menú Desktop -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- SECCIÓN HERO (INICIO) -->
+        <section id="inicio" class="section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text-section">
+                        <h1 class="hero-title typing">Hola, soy<br><span style="color: var(--accent-orange-glow);">Vera Guillen</span></h1>
+                        <div class="hero-subtitle">
+                            <span>🤖 Transformo datos complejos en soluciones de IA</span>
+                        </div>
+                        <div class="hero-card">
+                            <div class="hero-card-title">
+                                <span>💻 Data Scientist & ML Engineer</span>
+                            </div>
+                            <p class="hero-card-text">
+                                Diseño e implemento soluciones escalables que optimizan procesos y automatizan decisiones, 
+                                impulsando el crecimiento empresarial a través de la inteligencia artificial y el análisis de datos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hero-image-section">
+                        <div class="profile-wrapper">
+                            <div class="profile-decoration"></div>
+                            <div class="profile-image-wrapper">
+                                <div class="profile-image-inner">
+                                    <img src="./assets/foto_perfil.jpg" alt="Vera Guillen" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="profile-placeholder" style="display: none; width: 100%; height: 100%; background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-glow)); border-radius: 50%; align-items: center; justify-content: center; font-size: 4rem; color: white;">VG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="sobre-mi" class="section">
+            <h2 class="section-title">Sobre Mí</h2>
+            
+            <div class="about-section-enhanced">
+                <div class="about-grid">
+                    <div class="about-card-enhanced">
+                        <div class="about-card-icon">
+                            <span style="font-size: 1.8rem;">💻</span>
+                        </div>
+                        <p class="about-card-text">
+                            <strong>Data Scientist & Machine Learning Engineer</strong> con enfoque end-to-end. Mi experiencia abarca desde la ingeniería de datos hasta el despliegue y la orquestación en producción (MLOps).
+                        </p>
+                    </div>
+                    
+                    <div class="about-card-enhanced">
+                        <div class="about-card-icon">
+                            <span style="font-size: 1.8rem;">🧠</span>
+                        </div>
+                        <p class="about-card-text">
+                            Combino <strong>rigor técnico</strong> con <strong>creatividad estratégica</strong> para resolver desafíos complejos mediante Machine Learning, NLP y Computer Vision.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card-enhanced">
+                        <div class="about-card-icon">
+                            <span style="font-size: 1.8rem;">📊</span>
+                        </div>
+                        <p class="about-card-text">
+                            Diseño e implemento soluciones de IA escalables que optimizan procesos, automatizan decisiones y descubren <strong>insights accionables</strong> en grandes volúmenes de datos.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card-enhanced">
+                        <div class="about-card-icon">
+                            <span style="font-size: 1.8rem;">🎭</span>
+                        </div>
+                        <p class="about-card-text">
+                            Mi sólida formación en <strong>artes escénicas</strong> me aporta una perspectiva única: abordo sistemas complejos como narrativas, comunico insights técnicos con claridad excepcional y diseño soluciones que fusionan funcionalidad con <strong>experiencia de usuario intuitiva</strong>.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card-enhanced">
+                        <div class="about-card-icon">
+                            <span style="font-size: 1.8rem;">🚀</span>
+                        </div>
+                        <p class="about-card-text">
+                            Especializada en <strong>despliegue y producción</strong> de modelos de IA. Experiencia en MLOps, contenedorización con Docker, orquestación en la nube (Azure) y arquitecturas escalables que garantizan alta disponibilidad y rendimiento en entornos empresariales.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card-enhanced">
+                        <div class="about-card-icon">
+                            <span style="font-size: 1.8rem;">🔬</span>
+                        </div>
+                        <p class="about-card-text">
+                            Enfoque en <strong>investigación aplicada</strong> y experimentación continua. Combino metodologías científicas rigurosas con pragmatismo empresarial para validar hipótesis, iterar rápidamente y entregar soluciones que generan valor medible desde el primer día.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Especialidades -->
+            <div style="margin-top: 4rem;">
+                <h3 class="section-title-enhanced" style="font-size: clamp(1.5rem, 1.3rem + 2vw, 2.5rem); margin-bottom: 2rem;">
+                    <span>⭐ Mis Especialidades</span>
+                </h3>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+                    <div class="specialty-card-enhanced">
+                        <div class="specialty-icon-enhanced">
+                            <span style="font-size: 2.5rem;">🧠</span>
+                        </div>
+                        <h4>Machine Learning</h4>
+                        <p>Modelos predictivos y sistemas de recomendación personalizados.</p>
+                    </div>
+                    
+                    <div class="specialty-card-enhanced">
+                        <div class="specialty-icon-enhanced">
+                            <span style="font-size: 2.5rem;">🤖</span>
+                        </div>
+                        <h4>IA Generativa</h4>
+                        <p>Soluciones de IA conversacional y generación de contenido.</p>
+                    </div>
+                    
+                    <div class="specialty-card-enhanced">
+                        <div class="specialty-icon-enhanced">
+                            <span style="font-size: 2.5rem;">📈</span>
+                        </div>
+                        <h4>Análisis Predictivo</h4>
+                        <p>Extracción de insights y tendencias de grandes volúmenes de datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN HABILIDADES -->
+        <section id="habilidades" class="section">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            
+            <div class="skills-container-enhanced">
+                <div class="skill-category-enhanced">
+                    <h3><span style="margin-right: 12px;">💻</span> Lenguajes y Bases de Datos</h3>
+                    <div class="skill-items-enhanced">
+                        <div class="skill-item-enhanced"><span>🐍</span> Python (Avanzado)</div>
+                        <div class="skill-item-enhanced"><span>🗄️</span> SQL</div>
+                        <div class="skill-item-enhanced"><span>📘</span> TypeScript</div>
+                        <div class="skill-item-enhanced"><span>🐘</span> PostgreSQL</div>
+                        <div class="skill-item-enhanced"><span>⚡</span> Redis</div>
+                        <div class="skill-item-enhanced"><span>🔢</span> pgvector</div>
+                        <div class="skill-item-enhanced"><span>💻</span> Bash</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category-enhanced">
+                    <h3><span style="margin-right: 12px;">🧠</span> Análisis y Machine Learning</h3>
+                    <div class="skill-items-enhanced">
+                        <div class="skill-item-enhanced"><span>🐼</span> Pandas</div>
+                        <div class="skill-item-enhanced"><span>🔢</span> NumPy</div>
+                        <div class="skill-item-enhanced"><span>🤖</span> Scikit-learn</div>
+                        <div class="skill-item-enhanced"><span>📝</span> NLTK</div>
+                        <div class="skill-item-enhanced"><span>🕷️</span> BeautifulSoup</div>
+                        <div class="skill-item-enhanced"><span>🧠</span> TensorFlow</div>
+                        <div class="skill-item-enhanced"><span>🔥</span> PyTorch</div>
+                        <div class="skill-item-enhanced"><span>🤗</span> Transformers & Hugging Face</div>
+                        <div class="skill-item-enhanced"><span>👁️</span> OpenCV</div>
+                        <div class="skill-item-enhanced"><span>🎯</span> Fine-tuning (LoRA / QLoRA)</div>
+                        <div class="skill-item-enhanced"><span>🔍</span> RAG (Retrieval-Augmented Generation)</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category-enhanced">
+                    <h3><span style="margin-right: 12px;">🎨</span> Frontend y Visualización</h3>
+                    <div class="skill-items-enhanced">
+                        <div class="skill-item-enhanced"><span>⚛️</span> React 19</div>
+                        <div class="skill-item-enhanced"><span>🗺️</span> Leaflet</div>
+                        <div class="skill-item-enhanced"><span>📊</span> Power BI</div>
+                        <div class="skill-item-enhanced"><span>📈</span> Matplotlib</div>
+                        <div class="skill-item-enhanced"><span>📉</span> Seaborn</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category-enhanced">
+                    <h3><span style="margin-right: 12px;">⚙️</span> Backend, Cloud y Despliegue</h3>
+                    <div class="skill-items-enhanced">
+                        <div class="skill-item-enhanced"><span>⚡</span> FastAPI</div>
+                        <div class="skill-item-enhanced"><span>🍶</span> Flask</div>
+                        <div class="skill-item-enhanced"><span>🐳</span> Docker</div>
+                        <div class="skill-item-enhanced"><span>☁️</span> Azure</div>
+                        <div class="skill-item-enhanced"><span>📦</span> Git + GitHub</div>
+                        <div class="skill-item-enhanced"><span>💬</span> WhatsApp API</div>
+                        <div class="skill-item-enhanced"><span>🔍</span> Google APIs</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Habilidades Blandas -->
+            <div class="soft-skills-section" style="margin-top: 4rem;">
+                <h3 class="soft-skills-title" style="font-size: clamp(1.5rem, 1.3rem + 2vw, 2.8rem);">
+                    <span>👤</span> <span>Habilidades Blandas</span>
+                </h3>
+                <p class="soft-skills-description">
+                    Habilidades interpersonales esenciales que potencian mi desempeño profesional.
+                </p>
+                
+                <div class="soft-skills-container-enhanced">
+                    <div class="soft-skill-card-enhanced">
+                        <div class="soft-skill-header-enhanced">
+                            <div class="soft-skill-icon-wrapper">
+                                <span style="font-size: 1.5rem;">🧩</span>
+                            </div>
+                            <h3>Resolución de Problemas</h3>
+                        </div>
+                        <p>Capacidad para analizar problemas complejos y encontrar soluciones efectivas y creativas.</p>
+                    </div>
+                    
+                    <div class="soft-skill-card-enhanced">
+                        <div class="soft-skill-header-enhanced">
+                            <div class="soft-skill-icon-wrapper">
+                                <span style="font-size: 1.5rem;">👥</span>
+                            </div>
+                            <h3>Trabajo en Equipo</h3>
+                        </div>
+                        <p>Excelente capacidad para colaborar en equipos multidisciplinarios y fomentar un ambiente de trabajo positivo.</p>
+                    </div>
+                    
+                    <div class="soft-skill-card-enhanced">
+                        <div class="soft-skill-header-enhanced">
+                            <div class="soft-skill-icon-wrapper">
+                                <span style="font-size: 1.5rem;">💬</span>
+                            </div>
+                            <h3>Comunicación Efectiva</h3>
+                        </div>
+                        <p>Habilidad para explicar conceptos técnicos de manera clara a diferentes audiencias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="proyectos" class="section">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <p style="text-align: center; color: var(--text-secondary); font-size: clamp(1rem, 0.9rem + 1vw, 1.2rem); margin-bottom: 3rem;">
+                Una selección de mis trabajos más recientes y relevantes
+            </p>
+            
+            <div class="projects-grid">
+                <!-- Proyecto 1: Movilidad Sostenible -->
+                <a href="project-1.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/movilidad_sostenible.jpg" alt="Modelado de Movilidad Sostenible" onerror="this.src='./assets/proyectos/taxi1.jpg';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Modelado de Movilidad Sostenible</h3>
+                            <h4>Análisis de viabilidad para la transición a flotas de vehículos ecológicos</h4>
+                            <p>Estudio integral que evalúa la viabilidad de transición a vehículos ecológicos en flotas urbanas, incluyendo análisis de costos, infraestructura necesaria y beneficios ambientales.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Proyecto 2: Chatbot RAG -->
+                <a href="project-2.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/chatbot_rag.jpg" alt="Chatbot RAG Multimarca" onerror="this.src='./assets/proyectos/bot1.png';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Chatbot RAG Multimarca</h3>
+                            <h4>Sistema de IA conversacional para atención al cliente multicanal</h4>
+                            <p>Desarrollo de un chatbot avanzado con arquitectura RAG (Retrieval-Augmented Generation) que permite a las empresas ofrecer soporte multicanal (WhatsApp, web, aplicaciones móviles) con respuestas precisas basadas en su base de conocimiento.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Llama 3</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">pgvector</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Proyecto 3: Plataforma Inmobiliaria -->
+                <a href="project-3.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/real_estate_platform.jpg" alt="Plataforma Inmobiliaria Inteligente" onerror="this.src='./assets/proyectos/real1.jpg';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Plataforma Inmobiliaria Inteligente</h3>
+                            <h4>Solución integral de gestión y búsqueda de propiedades con IA</h4>
+                            <p>Plataforma que utiliza procesamiento de lenguaje natural y visión por computadora para analizar y categorizar propiedades, ofreciendo búsquedas semánticas y recomendaciones personalizadas.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">OpenCV</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Proyecto 4: Pharmawatch -->
+                <a href="project-4.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/pharmawatch_hero.jpg" alt="Monitoreo farmacéutico IoT" onerror="this.src='./assets/proyectos/farma1.png';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Monitoreo farmacéutico IoT</h3>
+                            <h4>Sistema de monitoreo en tiempo real</h4>
+                            <p>Sistema de monitoreo en tiempo real para el control de condiciones ambientales en la industria farmacéutica, con alertas y análisis predictivo para garantizar la cadena de frío de medicamentos sensibles.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MQTT</span>
+                                <span class="tech-tag">InfluxDB</span>
+                                <span class="tech-tag">Grafana</span>
+                                <span class="tech-tag">Raspberry Pi</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Proyecto 5: Data Acquisition -->
+                <a href="project-5.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/data_acquisition_hero.jpg" alt="Data Acquisition Platform" onerror="this.src='./assets/proyectos/search1.jpg';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Data Acquisition Platform</h3>
+                            <h4>Plataforma de adquisición y procesamiento de datos</h4>
+                            <p>Sistema de adquisición de datos de múltiples fuentes con capacidades de procesamiento y análisis en tiempo real, diseñado para manejar grandes volúmenes de información con alta disponibilidad.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Airflow</span>
+                                <span class="tech-tag">Kafka</span>
+                                <span class="tech-tag">Elasticsearch</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Proyecto 6: Sistema de Recomendación Steam -->
+                <a href="project-6.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/steam_recommendation.jpg" alt="Sistema de Recomendación para Steam" onerror="this.src='./assets/proyectos/videojuegos1.jpg';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Sistema de Recomendación para Steam</h3>
+                            <h4>Motor de recomendación de videojuegos utilizando NLP y técnicas de aprendizaje automático</h4>
+                            <p>Este proyecto implementa un sistema de recomendación de videojuegos utilizando técnicas avanzadas de Procesamiento de Lenguaje Natural (NLP) y similitud de coseno. El sistema analiza las características de los juegos y las preferencias de los usuarios para ofrecer recomendaciones personalizadas.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                                <span class="tech-tag">NLTK</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Proyecto 7: Análisis de Seguridad Vial -->
+                <a href="project-7.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/seguridad_vial_hero.jpg" alt="Análisis de Seguridad Vial" onerror="this.src='./assets/proyectos/accidentes1.png';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Análisis de Seguridad Vial en Buenos Aires</h3>
+                            <h4>Estudio integral de accidentes viales utilizando técnicas de análisis de datos y visualización</h4>
+                            <p>Análisis exhaustivo de accidentes de tránsito en la ciudad de Buenos Aires, utilizando técnicas avanzadas de análisis de datos, visualización geoespacial y machine learning para identificar patrones, zonas de riesgo y factores contribuyentes.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">GeoPandas</span>
+                                <span class="tech-tag">Matplotlib</span>
+                                <span class="tech-tag">Folium</span>
+                                <span class="tech-tag">Scikit-learn</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Proyecto 8: Chatbot Inmobiliario Inteligente -->
+                <a href="project-8.html" class="project-card-link">
+                    <div class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="./assets/proyectos/chatbot_inmobiliaria_hero.jpg" alt="Chatbot Inmobiliario Inteligente" onerror="this.src='./assets/proyectos/chatinmo1.jpg';">
+                        </div>
+                        <div class="project-card-content">
+                            <h3>Chatbot Inmobiliario Inteligente</h3>
+                            <h4>Plataforma Multi-Canal con Integración WhatsApp Business e IA Generativa</h4>
+                            <p>Solución empresarial de comunicación automatizada que integra WhatsApp Business API con inteligencia artificial avanzada para el sector inmobiliario. El sistema procesa consultas de clientes en tiempo real utilizando arquitectura asíncrona de alto rendimiento.</p>
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">pgvector</span>
+                                <span class="tech-tag">Llama 3</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">WhatsApp API</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-button">
+                                <span>Ver Proyecto →</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Proyecto 9: Dashboard de Métricas -->
+            <a href="project-9.html" class="project-card-link">
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./assets/proyectos/metricas1.png" alt="Dashboard de Métricas" onerror="this.src='./assets/proyectos/metricas2.png';">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Dashboard de Análisis en Tiempo Real</h3>
+                        <h4>Monitoreo y visualización de métricas de rendimiento para sistemas de IA</h4>
+                        <p>Dashboard interactivo para el monitoreo en tiempo real del rendimiento de sistemas de IA, permitiendo la visualización de métricas clave y el análisis del comportamiento de usuarios.</p>
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                        <div class="project-button">
+                            <span>Ver Proyecto →</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="section">
+            <h2 class="section-title">Contáctame</h2>
+            <p style="text-align: center; color: var(--text-secondary); font-size: clamp(1rem, 0.9rem + 1vw, 1.3rem); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                ¿Tienes un proyecto en mente o quieres trabajar juntos? 
+                Estoy disponible para oportunidades de colaboración y conversaciones sobre tecnología y datos.
+            </p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto 3rem; padding: 0 1rem;">
+                <div class="contact-card-enhanced">
+                    <div class="contact-icon-wrapper">
+                        <span style="font-size: 2.8rem;">📧</span>
+                    </div>
+                    <h3 class="contact-title">Correo Electrónico</h3>
+                    <p class="contact-description">Envíame un mensaje directamente</p>
+                    <a href="mailto:vera.guillen27@gmail.com" class="contact-link-enhanced" target="_blank">
+                        <span>✉️</span> <span>Enviar Email</span>
+                    </a>
+                </div>
+                
+                <div class="contact-card-enhanced">
+                    <div class="contact-icon-wrapper">
+                        <span style="font-size: 2.8rem;">💻</span>
+                    </div>
+                    <h3 class="contact-title">GitHub</h3>
+                    <p class="contact-description">Revisa mis proyectos en GitHub</p>
+                    <a href="https://github.com/veraguillen" class="contact-link-enhanced" target="_blank">
+                        <span>🔗</span> <span>Ver Perfil</span>
+                    </a>
+                </div>
+                
+                <div class="contact-card-enhanced">
+                    <div class="contact-icon-wrapper">
+                        <span style="font-size: 2.8rem;">💼</span>
+                    </div>
+                    <h3 class="contact-title">LinkedIn</h3>
+                    <p class="contact-description">Conecta conmigo profesionalmente</p>
+                    <a href="https://www.linkedin.com/in/vera-guillen-9b464a303/" class="contact-link-enhanced" target="_blank">
+                        <span>🔗</span> <span>Conectar</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="form-section">
+                <h3 class="form-title">
+                    <span>📧</span>
+                    <span>Envíame un Mensaje</span>
+                </h3>
+                <p class="form-description">
+                    O si prefieres, utiliza el siguiente formulario para contactarme directamente.
+                </p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="¿Sobre qué quieres hablar?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span>🚀</span>
+                        <span>Enviar Mensaje</span>
+                    </button>
+                </form>
+                <p id="form-status" class="form-status"></p>
+                <p id="form-status" class="form-status"></p>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p>© 2025 Vera Guillen. Hecho con ❤️ y mucho ☕</p>
+            <div class="footer-links">
+                <a href="https://github.com/veraguillen" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/vera-guillen-9b464a303/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+    <script src="./contact-form.js"></script>
+</body>
+</html>

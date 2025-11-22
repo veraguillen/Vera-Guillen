@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Monitoreo IoT Farmacéutico - Sistema de monitoreo en tiempo real para el control de condiciones ambientales">
+    <title>Monitoreo IoT Farmacéutico | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Menú Desktop -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index.html#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="index.html#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- HEADER DEL PROYECTO -->
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-pills"></i> Monitoreo IoT Farmacéutico
+            </h1>
+            <p class="project-subtitle">Sistema de monitoreo en tiempo real para el control de condiciones ambientales en la industria farmacéutica</p>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-container">
+            <img src="./assets/proyectos/pharmawatch_hero.jpg" alt="Monitoreo IoT Farmacéutico" onerror="this.src='./assets/proyectos/pharmawatch_hero.jpg';">
+        </div>
+
+        <!-- DESCRIPCIÓN DEL PROYECTO -->
+        <div class="content-card">
+            <h2 class="section-title-enhanced">
+                <i class="fas fa-info-circle"></i>
+                <span>Descripción del Proyecto</span>
+            </h2>
+            <p>Solución integral de monitoreo en tiempo real para la industria farmacéutica que garantiza el cumplimiento de normativas de almacenamiento mediante el análisis predictivo y la detección temprana de anomalías en las condiciones ambientales de almacenes de medicamentos.</p>
+        </div>
+
+        <!-- HALLAZGOS CLAVE -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-line"></i>
+            <span>Hallazgos Clave</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <div class="metric-value">99.2%</div>
+                <div class="metric-label">Precisión en detección de anomalías</div>
+                <h4 style="margin-top: 1.5rem; color: var(--accent-orange-glow);">⭐ Características Principales</h4>
+                <ul>
+                    <li>Monitoreo en tiempo real 24/7</li>
+                    <li>Alertas tempranas</li>
+                    <li>Análisis predictivo</li>
+                    <li>Reportes automatizados</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <div class="metric-value">45%</div>
+                <div class="metric-label">Reducción en pérdidas</div>
+                <h4 style="margin-top: 1.5rem; color: var(--accent-orange-glow);">🏆 Beneficios Clave</h4>
+                <ul>
+                    <li>Cumplimiento normativo</li>
+                    <li>Reducción de mermas</li>
+                    <li>Optimización de recursos</li>
+                    <li>Toma de decisiones basada en datos</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- METODOLOGÍA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-cogs"></i>
+            <span>Metodología</span>
+        </h2>
+
+        <div class="methodology-tabs">
+            <div class="method-tab">
+                <h3>1. Recolección</h3>
+                <ul>
+                    <li>Sensores IoT en tiempo real</li>
+                    <li>API para integración con sistemas existentes</li>
+                    <li>Almacenamiento seguro de datos</li>
+                    <li>Validación de calidad de datos</li>
+                </ul>
+            </div>
+            <div class="method-tab">
+                <h3>2. Procesamiento</h3>
+                <ul>
+                    <li>Limpieza y normalización</li>
+                    <li>Agregación de datos</li>
+                    <li>Cálculo de métricas</li>
+                    <li>Almacenamiento en base de datos</li>
+                </ul>
+            </div>
+            <div class="method-tab">
+                <h3>3. Análisis</h3>
+                <ul>
+                    <li>Modelo Isolation Forest</li>
+                    <li>Detección de patrones</li>
+                    <li>Predicción de tendencias</li>
+                    <li>Generación de alertas</li>
+                </ul>
+            </div>
+            <div class="method-tab">
+                <h3>4. Visualización</h3>
+                <ul>
+                    <li>Dashboard interactivo</li>
+                    <li>Gráficos en tiempo real</li>
+                    <li>Reportes personalizables</li>
+                    <li>Alertas visuales</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- STACK TECNOLÓGICO -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-tools"></i>
+            <span>Stack Tecnológico</span>
+        </h2>
+
+        <div class="tech-grid">
+            <div class="content-card">
+                <h4>⚛️ Frontend</h4>
+                <ul>
+                    <li>React 19</li>
+                    <li>TypeScript</li>
+                    <li>Redux Toolkit</li>
+                    <li>Material-UI</li>
+                    <li>Leaflet</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>⚙️ Backend</h4>
+                <ul>
+                    <li>Python 3.10+</li>
+                    <li>FastAPI</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>Celery</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>🧠 Machine Learning</h4>
+                <ul>
+                    <li>Scikit-learn</li>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>MLflow</li>
+                    <li>Prometeo/Grafana</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- VISUALIZACIONES -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-images"></i>
+            <span>Visualizaciones</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/farma1.png" alt="Dashboard principal - Monitoreo en tiempo real" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/farma2.jpg" alt="Mapa de sensores IoT y ubicaciones" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/farma3.jpg" alt="Análisis de tendencias y métricas" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <!-- IMPACTO Y RESULTADOS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-bar"></i>
+            <span>Resultados e Impacto</span>
+        </h2>
+
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Disponibilidad y Escala</h4>
+            <p>Sistema en producción con 99.2% de uptime, monitoreando 150+ sensores y procesando 6,000+ lecturas diarias.</p>
+        </div>
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Precisión del Modelo</h4>
+            <p>El modelo de Machine Learning alcanzó una precisión del 92% en la detección de anomalías.</p>
+        </div>
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Reducción de Falsos Positivos</h4>
+            <p>40% en comparación con el sistema de alertas basado en umbrales anterior.</p>
+        </div>
+        <div class="content-card">
+            <h4 style="color: var(--accent-orange-glow);">Optimización de Rendimiento</h4>
+            <p>80% en llamadas a APIs externas gracias a una capa de caché estratégica.</p>
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/Monitoreo-IoT" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Ver en GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Volver al Inicio</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+

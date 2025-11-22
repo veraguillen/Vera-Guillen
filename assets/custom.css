@@ -1,0 +1,288 @@
+/* ============================================
+   CUSTOM CSS CYBERPUNK/HACKER THEME
+   Responsive y Mobile-First
+   ============================================ */
+
+/* Variables responsive */
+:root {
+    --touch-target-min: 2.75rem; /* 44px mínimo para zonas táctiles */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+/* ============================================
+   MAIN BACKGROUND AND TEXT COLORS
+   ============================================ */
+body, .stApp {
+    background-color: #0D1117 !important;
+    color: #E6EDF3 !important;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   HEADERS RESPONSIVE
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+    color: #E6EDF3 !important;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1 {
+    color: #FF8C2B !important;
+    text-shadow: 0 0 clamp(0.625rem, 0.5rem + 1vw, 1.25rem) rgba(255, 140, 43, 0.5) !important;
+    font-size: clamp(1.75rem, 1.5rem + 4vw, 3.5rem) !important; /* 28px - 56px */
+}
+
+h2 {
+    font-size: clamp(1.5rem, 1.3rem + 3vw, 2.5rem) !important; /* 24px - 40px */
+}
+
+h3 {
+    font-size: clamp(1.25rem, 1.1rem + 2vw, 2rem) !important; /* 20px - 32px */
+}
+
+/* ============================================
+   LINKS RESPONSIVE
+   ============================================ */
+a {
+    color: #FF6A00 !important;
+    transition: all 0.3s ease !important;
+    min-height: var(--touch-target-min);
+    min-width: var(--touch-target-min);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+}
+
+a:hover {
+    color: #FF8C2B !important;
+    text-shadow: 0 0 clamp(0.625rem, 0.5rem + 1vw, 1.25rem) #FF6A00 !important;
+    filter: brightness(1.2);
+}
+
+/* ============================================
+   CARDS AND CONTAINERS RESPONSIVE
+   ============================================ */
+.card, .specialty-card, .approach-item, .stButton>button {
+    background-color: #161B22 !important;
+    border: 0.0625rem solid rgba(255, 106, 0, 0.2) !important; /* 1px */
+    color: #E6EDF3 !important;
+    transition: all 0.3s ease !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.card:hover, .specialty-card:hover, .approach-item:hover {
+    border-color: #FF6A00 !important;
+    box-shadow: 0 0 clamp(0.9375rem, 0.75rem + 1.5vw, 1.875rem) rgba(255, 106, 0, 0.4) !important;
+}
+
+/* ============================================
+   BUTTONS RESPONSIVE
+   ============================================ */
+.stButton>button {
+    background-color: transparent !important;
+    color: #FF6A00 !important;
+    border: 0.0625rem solid #FF6A00 !important; /* 1px */
+    transition: all 0.3s ease !important;
+    min-height: var(--touch-target-min);
+    min-width: var(--touch-target-min);
+    padding: clamp(0.75rem, 0.6rem + 0.8vw, 0.75rem) clamp(1.25rem, 1rem + 1.5vw, 1.5rem) !important;
+    font-size: clamp(0.875rem, 0.8rem + 0.4vw, 1rem) !important;
+    cursor: pointer;
+}
+
+.stButton>button:hover {
+    background-color: rgba(255, 106, 0, 0.1) !important;
+    border-color: #FF8C2B !important;
+    color: #FF8C2B !important;
+    box-shadow: 0 0 clamp(0.9375rem, 0.75rem + 1.5vw, 1.875rem) rgba(255, 106, 0, 0.4) !important;
+    text-shadow: 0 0 clamp(0.625rem, 0.5rem + 1vw, 1.25rem) #FF6A00 !important;
+    transform: translateY(-0.125rem) !important; /* -2px */
+}
+
+/* ============================================
+   INPUT FIELDS RESPONSIVE
+   ============================================ */
+.stTextInput>div>div>input, 
+.stTextArea>div>div>textarea,
+.stSelectbox>div>div>div,
+.stSlider>div>div>div>div {
+    background-color: #161B22 !important;
+    color: #E6EDF3 !important;
+    border: 0.0625rem solid rgba(255, 106, 0, 0.2) !important; /* 1px */
+    border-radius: 0.5rem !important; /* 8px */
+    padding: clamp(0.625rem, 0.5rem + 0.8vw, 0.75rem) clamp(0.875rem, 0.75rem + 1vw, 1rem) !important;
+    font-size: clamp(0.875rem, 0.8rem + 0.4vw, 1rem) !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.stTextInput>div>div>input:focus, 
+.stTextArea>div>div>textarea:focus {
+    border-color: #FF6A00 !important;
+    box-shadow: 0 0 clamp(0.625rem, 0.5rem + 1vw, 1.25rem) rgba(255, 106, 0, 0.3) !important;
+    outline: none !important;
+}
+
+/* ============================================
+   TABLES RESPONSIVE
+   ============================================ */
+table.dataframe {
+    background-color: #161B22 !important;
+    color: #E6EDF3 !important;
+    border: 0.0625rem solid rgba(255, 106, 0, 0.2) !important; /* 1px */
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+@media (max-width: 48rem) { /* 768px */
+    table.dataframe {
+        font-size: clamp(0.75rem, 0.7rem + 0.3vw, 0.875rem) !important;
+    }
+}
+
+/* ============================================
+   CUSTOM ACCENT COLOR
+   ============================================ */
+.highlight, .accent-text {
+    color: #FF6A00 !important;
+    text-shadow: 0 0 clamp(0.5rem, 0.4rem + 0.8vw, 0.9375rem) rgba(255, 106, 0, 0.5) !important;
+}
+
+/* ============================================
+   CREATIVE SECTION RESPONSIVE
+   ============================================ */
+.creative-section {
+    background-color: #161B22 !important;
+    border-left: 0.25rem solid #FF6A00 !important; /* 4px */
+    padding: clamp(1rem, 0.8rem + 1.5vw, 1.5rem) !important;
+    margin: clamp(1rem, 0.8rem + 1.5vw, 1.5rem) 0 !important;
+    border-radius: 0 0.5rem 0.5rem 0; /* 0 8px 8px 0 */
+    box-shadow: 0 0 clamp(0.625rem, 0.5rem + 1vw, 1.25rem) rgba(255, 106, 0, 0.2) !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.creative-section h3 {
+    color: #FF8C2B !important;
+    margin-top: 0 !important;
+    text-shadow: 0 0 clamp(0.5rem, 0.4rem + 0.8vw, 0.9375rem) rgba(255, 140, 43, 0.5) !important;
+    font-size: clamp(1.25rem, 1.1rem + 2vw, 2rem) !important;
+}
+
+.creative-section p {
+    color: #8B949E !important;
+    margin-bottom: 0 !important;
+    line-height: 1.6 !important;
+    font-size: clamp(0.875rem, 0.8rem + 0.4vw, 1rem) !important;
+}
+
+/* ============================================
+   SCROLLBAR PERSONALIZADA
+   ============================================ */
+::-webkit-scrollbar {
+    width: clamp(0.5rem, 0.4rem + 0.5vw, 0.75rem); /* 8px - 12px */
+}
+
+::-webkit-scrollbar-track {
+    background: #0D1117;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #FF6A00 0%, #FF8C2B 100%);
+    border-radius: 0.375rem; /* 6px */
+    border: 0.125rem solid #0D1117; /* 2px */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #FF8C2B 0%, #FF6A00 100%);
+    box-shadow: 0 0 clamp(0.375rem, 0.3rem + 0.5vw, 0.625rem) rgba(255, 106, 0, 0.6);
+}
+
+/* ============================================
+   MEDIA QUERIES - MOBILE FIRST
+   ============================================ */
+
+/* Móviles pequeños (< 576px) */
+@media (max-width: 35.9375rem) { /* 575px */
+    .creative-section {
+        padding: var(--spacing-sm) !important;
+        margin: var(--spacing-sm) 0 !important;
+    }
+    
+    .card, .specialty-card, .approach-item {
+        padding: var(--spacing-sm) !important;
+    }
+}
+
+/* Móviles grandes (576px – 767px) */
+@media (min-width: 36rem) and (max-width: 47.9375rem) { /* 576px - 767px */
+    .creative-section {
+        padding: clamp(1.25rem, 1rem + 1.5vw, 1.5rem) !important;
+    }
+}
+
+/* Tablets (768px – 991px) */
+@media (min-width: 48rem) and (max-width: 61.9375rem) { /* 768px - 991px */
+    /* Ajustes específicos para tablets si es necesario */
+}
+
+/* Laptops (992px – 1199px) */
+@media (min-width: 62rem) and (max-width: 74.9375rem) { /* 992px - 1199px */
+    /* Ajustes específicos para laptops si es necesario */
+}
+
+/* Escritorio grande (≥ 1200px) */
+@media (min-width: 75rem) { /* 1200px */
+    /* Ajustes específicos para escritorio si es necesario */
+}
+
+/* ============================================
+   UTILIDADES ADICIONALES
+   ============================================ */
+
+/* Prevenir overflow horizontal */
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mejorar legibilidad en móviles */
+@media (max-width: 48rem) { /* 768px */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Asegurar que todos los elementos interactivos sean táctiles */
+    button, .stButton>button, a, input, select, textarea {
+        min-height: var(--touch-target-min);
+        min-width: var(--touch-target-min);
+    }
+}
+
+/* Imágenes responsive */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.stImage img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}

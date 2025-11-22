@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Sistema de Recomendación para Steam - Motor de recomendación de videojuegos utilizando NLP y técnicas de aprendizaje automático">
+    <title>Sistema de Recomendación para Steam | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Menú Desktop -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="index.html#sobre-mi" class="nav-link">Sobre Mí</a></li>
+            <li class="nav-item"><a href="index.html#habilidades" class="nav-link">Habilidades</a></li>
+            <li class="nav-item"><a href="index.html#proyectos" class="nav-link">Proyectos</a></li>
+            <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        
+        <!-- Botón Hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index.html#inicio" class="mobile-nav-link">Inicio</a></li>
+            <li class="mobile-nav-item"><a href="index.html#sobre-mi" class="mobile-nav-link">Sobre Mí</a></li>
+            <li class="mobile-nav-item"><a href="index.html#habilidades" class="mobile-nav-link">Habilidades</a></li>
+            <li class="mobile-nav-item"><a href="index.html#proyectos" class="mobile-nav-link">Proyectos</a></li>
+            <li class="mobile-nav-item"><a href="index.html#contacto" class="mobile-nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay para menú móvil -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- HEADER DEL PROYECTO -->
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-gamepad"></i> Sistema de Recomendación para Steam
+            </h1>
+            <p class="project-subtitle">Motor de recomendación de videojuegos utilizando NLP y técnicas de aprendizaje automático</p>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-container">
+            <img src="./assets/proyectos/steam_recommendation.jpg" alt="Sistema de Recomendación para Steam" onerror="this.src='./assets/proyectos/steam_recommendation.jpg';">
+        </div>
+
+        <!-- DESCRIPCIÓN DEL PROYECTO -->
+        <div class="content-card">
+            <h2 class="section-title-enhanced">
+                <i class="fas fa-info-circle"></i>
+                <span>Descripción del Proyecto</span>
+            </h2>
+            <p>Este proyecto implementa un sistema de recomendación de videojuegos utilizando técnicas avanzadas de Procesamiento de Lenguaje Natural (NLP) y similitud de coseno. El sistema analiza las características de los juegos y las preferencias de los usuarios para ofrecer recomendaciones personalizadas.</p>
+        </div>
+
+        <!-- CARACTERÍSTICAS PRINCIPALES -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-star"></i>
+            <span>Características Principales</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>🔍 Búsqueda por Contenido</h3>
+                <ul>
+                    <li>Análisis de texto con NLP para extraer características</li>
+                    <li>Vectorización TF-IDF para representación numérica</li>
+                    <li>Cálculo de similitud de coseno entre juegos</li>
+                    <li>Procesamiento de descripciones y reseñas</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>🎯 Recomendaciones Personalizadas</h3>
+                <ul>
+                    <li>Filtrado colaborativo basado en usuarios similares</li>
+                    <li>Sistema híbrido que combina múltiples técnicas</li>
+                    <li>Personalización según historial de juegos</li>
+                    <li>Recomendaciones en tiempo real</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- STACK TECNOLÓGICO -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-tools"></i>
+            <span>Stack Tecnológico</span>
+        </h2>
+
+        <div class="tech-grid">
+            <div class="content-card">
+                <h4>Backend</h4>
+                <ul>
+                    <li>Python 3.10</li>
+                    <li>FastAPI</li>
+                    <li>Scikit-learn</li>
+                    <li>NLTK</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>Procesamiento</h4>
+                <ul>
+                    <li>Pandas</li>
+                    <li>NumPy</li>
+                    <li>Scipy</li>
+                    <li>Gensim</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>Visualización</h4>
+                <ul>
+                    <li>Matplotlib</li>
+                    <li>Seaborn</li>
+                    <li>Plotly</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>Despliegue</h4>
+                <ul>
+                    <li>Docker</li>
+                    <li>AWS EC2</li>
+                    <li>Nginx</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- METODOLOGÍA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-brain"></i>
+            <span>Metodología</span>
+        </h2>
+
+        <div class="methodology-tabs">
+            <div class="method-tab active" data-tab="1">
+                <h3>1. Recolección y Procesamiento de Datos</h3>
+                <ul>
+                    <li>Extracción de datos de la API de Steam y fuentes abiertas</li>
+                    <li>Limpieza y normalización de texto</li>
+                    <li>Procesamiento de características (features) relevantes</li>
+                    <li>Ingeniería de características para el modelo</li>
+                </ul>
+            </div>
+            <div class="method-tab" data-tab="2">
+                <h3>2. Modelado y Entrenamiento</h3>
+                <ul>
+                    <li>Implementación de algoritmos de recomendación</li>
+                    <li>Entrenamiento con datos históricos</li>
+                    <li>Validación cruzada y ajuste de hiperparámetros</li>
+                    <li>Evaluación de métricas de rendimiento</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- RESULTADOS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-bar"></i>
+            <span>Resultados</span>
+        </h2>
+
+        <div class="metrics-grid">
+            <div class="metric-box">
+                <h3>🎯 Precisión del Modelo</h3>
+                <h2>87%</h2>
+                <p>en conjunto de prueba</p>
+            </div>
+            <div class="metric-box">
+                <h3>⚡ Tiempo de Respuesta</h3>
+                <h2>&lt; 500ms</h2>
+                <p>por recomendación</p>
+            </div>
+            <div class="metric-box">
+                <h3>📈 Escalabilidad</h3>
+                <h2>1,000</h2>
+                <p>solicitudes/minuto</p>
+            </div>
+            <div class="metric-box">
+                <h3>⭐ Satisfacción</h3>
+                <h2>4.8/5</h2>
+                <p>en pruebas de usuario</p>
+            </div>
+        </div>
+
+        <!-- GALERÍA -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-images"></i>
+            <span>Galería</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/videojuegos1.jpg" alt="Sistema de recomendación - Interfaz principal" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/videojuegos2.jpg" alt="Dashboard de métricas y recomendaciones" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/videojuegos3.jpg" alt="Análisis de similitud y clustering" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/videojuegos4.jpg" alt="Visualización de datos y resultados" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <!-- BOTONES DE ACCIÓN -->
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/MachineLearning-STEAM" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">Ver en GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Volver al Inicio</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+
