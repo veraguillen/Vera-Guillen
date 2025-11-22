@@ -81,7 +81,7 @@ dmypy.json
 .pyre/
 
 # Project specific
-*.mp4
+cv.md
 # Keep assets but ignore large media files if needed
 # Uncomment if you want to ignore large files:
 # assets/**/*.mp4

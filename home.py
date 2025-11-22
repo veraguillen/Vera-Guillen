@@ -58,7 +58,7 @@ except:
     pass
 
 # --- VIEWPORT META TAG ---
-        st.markdown("""
+st.markdown("""
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 """, unsafe_allow_html=True)
 
