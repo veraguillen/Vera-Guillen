@@ -1758,14 +1758,22 @@ img {
    MEDIA QUERIES PARA RESPONSIVIDAD
    ============================================ */
 
-/* Tablets y dispositivos más pequeños (hasta 992px) */
+/* Tablets (hasta 992px) */
 @media (max-width: 62rem) {
-    .skills-container-enhanced {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    .skills-container-enhanced,
+    .projects-grid,
+    .soft-skills-container-enhanced,
+    .contact-grid /* Asumiendo que el contenedor de tarjetas de contacto tiene esta clase o similar */ {
+        grid-template-columns: 1fr;
+    }
+
+    /* Si las tarjetas de contacto no están en un grid, las forzamos a ser bloques */
+    .contact-card-enhanced {
+        margin-bottom: 1.5rem;
     }
 }
 
-/* Tablets y móviles (hasta 768px) */
+/* Móviles (hasta 768px) */
 @media (max-width: 48rem) {
     .navbar-nav {
         display: none;
@@ -1783,12 +1791,6 @@ img {
     .hero-image-section {
         order: -1; /* Mueve la imagen arriba en móvil */
         margin-bottom: 2rem;
-    }
-
-    .skills-container-enhanced,
-    .projects-grid,
-    .soft-skills-container-enhanced {
-        grid-template-columns: 1fr;
     }
 
     .form-row {
