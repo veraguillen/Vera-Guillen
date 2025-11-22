@@ -10,10 +10,9 @@
     
     if (!contactForm) return;
     
-    // IMPORTANTE: Reemplaza 'YOUR_FORM_ID' con tu ID real de Formspree
-    // O cambia la URL a Getform: 'https://getform.io/f/YOUR_FORM_ID'
-    // Render inyectará la variable de entorno aquí. No la expongas en el código.
-    const FORM_ENDPOINT = '{{ FORMSPREE_ENDPOINT }}';
+        // Usamos el endpoint de Formspree directamente
+    // En Vercel, configuraremos esta variable de entorno en la configuración del proyecto
+    const FORM_ENDPOINT = 'https://formspree.io/f/xqajdvzr';
     
     contactForm.addEventListener('submit', async function(e) {
         e.preventDefault();

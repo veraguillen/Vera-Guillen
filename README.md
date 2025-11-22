@@ -1,6 +1,21 @@
 # 🚀 Portfolio Vera Guillen - Static Site
 
-Portfolio personal profesional 100% responsive construido con HTML5, CSS3 y JavaScript vanilla. Diseño moderno tipo cyberpunk/hacker optimizado para todos los dispositivos.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fveraguillen%2FVera-Guillen&env=FORMSPREE_ENDPOINT&envDescription=Configuraci%C3%B3n%20de%20Formspree%20para%20el%20formulario%20de%20contacto&envLink=https%3A%2F%2Fformspree.io%2F)
+
+## 🚀 Despliegue en Vercel
+
+Este proyecto está configurado para desplegarse fácilmente en Vercel. Sigue estos pasos:
+
+1. Haz clic en el botón "Deploy" de arriba
+2. Conecta tu cuenta de GitHub
+3. Asegúrate de que la variable de entorno `FORMSPREE_ENDPOINT` esté configurada con tu endpoint de Formspree
+4. Haz clic en "Deploy"
+
+## 📝 Variables de Entorno
+
+Asegúrate de configurar las siguientes variables de entorno en Vercel:
+
+- `FORMSPREE_ENDPOINT`: Tu endpoint de Formspree (ej: `https://formspree.io/f/tu-id`)
 
 ## ✨ Características
 
