@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Data Acquisition & Processing Pipeline - Automation of data collection and processing for advanced analysis">
+    <title>Data Acquisition & Processing Pipeline | Vera Guillen</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- MATRIX CANVAS BACKGROUND -->
+    <canvas id="matrix-canvas"></canvas>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="index-en.html" class="navbar-brand">Vera Guillen</a>
+        
+        <!-- Desktop Menu -->
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index-en.html#inicio" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index-en.html#sobre-mi" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="index-en.html#habilidades" class="nav-link">Skills</a></li>
+            <li class="nav-item"><a href="index-en.html#proyectos" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="index-en.html#contacto" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="project-5.html" class="lang-btn">🇪🇸 Español</a></li>
+        </ul>
+        
+        <!-- Hamburger Button -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav">
+            <li class="mobile-nav-item"><a href="index-en.html#inicio" class="mobile-nav-link">Home</a></li>
+            <li class="mobile-nav-item"><a href="index-en.html#sobre-mi" class="mobile-nav-link">About Me</a></li>
+            <li class="mobile-nav-item"><a href="index-en.html#habilidades" class="mobile-nav-link">Skills</a></li>
+            <li class="mobile-nav-item"><a href="index-en.html#proyectos" class="mobile-nav-link">Projects</a></li>
+            <li class="mobile-nav-item"><a href="index-en.html#contacto" class="mobile-nav-link">Contact</a></li>
+            <li class="mobile-nav-item"><a href="project-5.html" class="lang-btn">🇪🇸 Español</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="main-content">
+        <!-- PROJECT HEADER -->
+        <div class="project-header-enhanced">
+            <h1 class="project-title-enhanced">
+                <i class="fas fa-database"></i> Data Acquisition & Processing Pipeline
+            </h1>
+            <p class="project-subtitle">Automation of data collection and processing for advanced analysis</p>
+        </div>
+
+        <!-- HERO IMAGE -->
+        <div class="hero-image-container">
+            <img src="./assets/proyectos/data_acquisition_hero.jpg" alt="Data Acquisition System Architecture" onerror="this.src='./assets/proyectos/data_acquisition_hero.jpg';">
+        </div>
+
+        <!-- KEY METRICS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-chart-bar"></i>
+            <span>Key Metrics</span>
+        </h2>
+
+        <div class="metrics-grid">
+            <div class="metric-box">
+                <h3>🔗 Data Sources</h3>
+                <h2>100+</h2>
+            </div>
+            <div class="metric-box">
+                <h3>⚡ Time Reduction</h3>
+                <h2>80%</h2>
+            </div>
+            <div class="metric-box">
+                <h3>🎯 Success Rate</h3>
+                <h2>95%</h2>
+            </div>
+            <div class="metric-box">
+                <h3>💰 Cost Savings</h3>
+                <h2>60%</h2>
+            </div>
+        </div>
+
+        <!-- PROJECT DESCRIPTION -->
+        <div class="content-card">
+            <h2 class="section-title-enhanced">
+                <i class="fas fa-info-circle"></i>
+                <span>Project Description</span>
+            </h2>
+            <p>Comprehensive solution for data acquisition, cleaning and transformation from multiple sources. The system automates data collection, ensuring its quality and availability for subsequent analysis.</p>
+        </div>
+
+        <!-- KEY FEATURES -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-star"></i>
+            <span>Key Features</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>🌐 Data Extraction</h3>
+                <h4>🔄 Multiple Sources</h4>
+                <ul>
+                    <li>🌍 Advanced Web Scraping</li>
+                    <li>🔌 API Integration</li>
+                    <li>📂 File Processing</li>
+                    <li>🔍 Automated Search</li>
+                </ul>
+                <h4 style="margin-top: 1.5rem;">🛠️ Processing</h4>
+                <ul>
+                    <li>🧹 Automatic Cleaning</li>
+                    <li>🔗 Data Normalization</li>
+                    <li>📊 Transformation</li>
+                    <li>📦 Efficient Storage</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- TECHNOLOGIES USED -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-tools"></i>
+            <span>Technologies Used</span>
+        </h2>
+
+        <div class="tech-grid">
+            <div class="content-card">
+                <h4>🐍 Backend</h4>
+                <ul>
+                    <li>Python 3.9+</li>
+                    <li>BeautifulSoup</li>
+                    <li>Requests</li>
+                    <li>Tenacity</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>☁️ Infrastructure</h4>
+                <ul>
+                    <li>Azure Functions</li>
+                    <li>Redis Cache</li>
+                    <li>Azure Blob Storage</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h4>🔍 APIs and Tools</h4>
+                <ul>
+                    <li>Google Custom Search</li>
+                    <li>Selenium</li>
+                    <li>Pandas</li>
+                    <li>NLTK</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ARCHITECTURE -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-sitemap"></i>
+            <span>System Architecture</span>
+        </h2>
+
+        <div class="content-card">
+            <h3>🔄 Data Flow</h3>
+            <ol style="color: var(--text-secondary); line-height: 2; padding-left: 2rem;">
+                <li><strong>Extraction:</strong> Obtaining data from multiple sources</li>
+                <li><strong>Processing:</strong> Cleaning and normalization</li>
+                <li><strong>Storage:</strong> Structured data saving</li>
+                <li><strong>Analysis:</strong> Processing to obtain insights</li>
+            </ol>
+        </div>
+
+        <!-- RESULTS -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-trophy"></i>
+            <span>Results Achieved</span>
+        </h2>
+
+        <div class="findings-grid">
+            <div class="content-card">
+                <h3>🎯 Impact</h3>
+                <ul>
+                    <li>⏱️ <strong>80%</strong> reduction in processing time</li>
+                    <li>💰 <strong>60%</strong> savings in API costs</li>
+                    <li>📊 <strong>95%</strong> extraction accuracy</li>
+                    <li>🚀 <strong>100+</strong> integrated sources</li>
+                </ul>
+            </div>
+            <div class="content-card">
+                <h3>🏆 Achievements</h3>
+                <ul>
+                    <li>🏅 Scalable and maintainable system</li>
+                    <li>📈 Higher data quality</li>
+                    <li>🔄 Real-time processing</li>
+                    <li>🌐 Cross-platform compatibility</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GALLERY -->
+        <h2 class="section-title-enhanced">
+            <i class="fas fa-images"></i>
+            <span>Gallery</span>
+        </h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/search1.jpg" alt="Data search and extraction system" onerror="this.style.display='none';">
+            </div>
+            <div class="gallery-image-container">
+                <img src="./assets/proyectos/search2.jpg" alt="Data acquisition pipeline architecture" onerror="this.style.display='none';">
+            </div>
+        </div>
+
+        <!-- ACTION BUTTONS -->
+        <div class="project-actions">
+            <a href="https://github.com/veraguillen/AGENTE-Busqueda-APIS" target="_blank" rel="noopener noreferrer" class="github-button-cyberpunk">
+                <span class="github-button-icon">🔗</span>
+                <span class="github-button-text">View on GitHub</span>
+                <span class="github-button-arrow">→</span>
+            </a>
+            <a href="index-en.html#proyectos" class="back-button">
+                <span>←</span>
+                <span>Back to Home</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./matrix.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+

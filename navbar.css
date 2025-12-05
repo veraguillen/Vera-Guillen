@@ -110,6 +110,40 @@
     text-shadow: 0 0 1.25rem rgba(255, 140, 43, 0.5);
 }
 
+/* Language Switcher Button */
+.lang-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(0.75rem, 0.7rem + 0.4vw, 0.9rem);
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+    border: 0.125rem solid var(--accent-orange);
+    border-radius: 0.5rem;
+    transition: all var(--transition-speed) ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lang-btn:hover {
+    background: rgba(255, 106, 0, 0.15);
+    color: var(--accent-orange-glow);
+    border-color: var(--accent-orange-glow);
+    text-shadow: 0 0 1rem rgba(255, 140, 43, 0.6);
+    box-shadow: 0 0 0.75rem rgba(255, 106, 0, 0.4);
+    transform: translateY(-0.125rem);
+}
+
+.lang-btn:active {
+    transform: translateY(0);
+}
+
 /* Botón Hamburguesa */
 .hamburger {
     display: none;
