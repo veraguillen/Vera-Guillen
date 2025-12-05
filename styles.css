@@ -1829,13 +1829,38 @@ img {
 }
 
 /* ============================================
-   ESTILO BASH/LINUX TERMINAL
+   ESTILO BASH/LINUX TERMINAL - HERO
    ============================================ */
-.user {
-    color: #00ff00;
-    font-weight: 600;
+.hero-terminal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
     font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 0.05em;
+    font-size: clamp(0.85rem, 0.8rem + 1vw, 1.2rem);
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+.hero-terminal .prompt {
+    color: #00ff00;
+    font-weight: 700;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.hero-terminal .cmd {
+    color: #ffffff;
+    font-weight: 500;
+    flex: 1;
+    min-width: 0;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 /* ============================================
